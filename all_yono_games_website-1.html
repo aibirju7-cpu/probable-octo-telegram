@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Yono Games India</title>
+<meta name="description" content="All Yono Games India - game app listings and download links.">
+<style>
+:root{--red:#f10b12;--deep:#c90008;--ink:#202533;--muted:#687385;--bg:#f5f7fb;--line:#e5e8ef}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+.topbar{background:linear-gradient(110deg,#ff171d,#e90008);color:white;padding:14px 16px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5;box-shadow:0 3px 12px #0002}
+.logo{width:60px;height:60px;border-radius:16px;background:#073c26;border:2px solid #fff;display:grid;place-items:center;font-weight:1000;color:#ffe600;text-align:center;font-size:13px;line-height:1.05;box-shadow:0 2px 8px #0003}
+.brand{flex:1}.brand h1{font-size:clamp(18px,4vw,27px);margin:0;font-weight:900}.brand p{margin:3px 0 0;font-size:13px;font-weight:700}
+.menu{border:0;background:#c90008;color:#fff;border-radius:12px;font-size:27px;padding:8px 14px}
+nav{display:flex;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:88px;z-index:4}
+nav a{flex:1;text-align:center;padding:14px 6px;color:#596578;text-decoration:none;font-weight:750;border-bottom:3px solid transparent}
+nav a.active{color:var(--red);border-color:var(--red)}
+main{max-width:1000px;margin:auto;padding:16px}
+.hero{border-radius:22px;padding:24px 18px;color:#fff;text-align:center;background:radial-gradient(circle at 15% 20%,#8e2bff,transparent 38%),radial-gradient(circle at 85% 90%,#0087ff,transparent 38%),linear-gradient(120deg,#17106a,#130a40);box-shadow:0 5px 16px #0002;overflow:hidden}
+.hero h2{font-size:clamp(27px,6vw,44px);line-height:1.05;margin:0;text-shadow:2px 3px 0 #000;font-weight:1000}.hero p{margin:12px auto 0;max-width:550px;font-weight:800;background:#ffdc00;color:#171717;padding:9px;border-radius:9px;transform:rotate(-1deg)}
+.intro{background:linear-gradient(110deg,#056b68,#00bfc4);color:#fff;border-radius:17px;padding:16px;margin:16px 0;line-height:1.55;font-size:14px}
+.tabs{display:flex;gap:12px;margin:16px 0}.tab{flex:1;border:1px solid var(--line);border-radius:40px;padding:13px;background:#fff;font-size:16px;font-weight:850;color:#303440;cursor:pointer}.tab.selected{background:var(--red);color:#fff;border-color:var(--red)}
+.game-list{display:grid;gap:13px}.game{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px;display:flex;align-items:center;gap:13px;box-shadow:0 2px 8px #0001;position:relative}.appicon{width:82px;height:82px;flex-shrink:0;border-radius:18px;display:grid;place-items:center;color:#ffeb00;font-weight:1000;text-align:center;font-size:19px;line-height:1.05;text-shadow:1px 2px 2px #000;background:linear-gradient(140deg,#008f49,#003b1c);border:3px solid #e7f4ec;overflow:hidden}.appicon.gold{background:linear-gradient(140deg,#ffc500,#6b3900)}.appicon.blue{background:linear-gradient(140deg,#00b4d7,#002d67)}.appicon.purple{background:linear-gradient(140deg,#a200e4,#3b0058)}.details{min-width:0;flex:1}.details h3{margin:0 0 5px;font-size:19px}.bonus{color:#d90016;font-weight:750;margin:3px 0;font-size:14px}.withdraw{color:#151515;font-size:14px;margin:3px 0}.download{background:#050505;color:white;text-decoration:none;border-radius:13px;padding:13px 16px;font-weight:850;display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;min-width:130px}.download:hover{background:#333}.badge{position:absolute;top:-7px;left:-5px;background:var(--red);color:white;border-radius:50%;width:27px;height:27px;display:grid;place-items:center;font-size:12px;font-weight:900;border:2px solid white}
+.telegram{display:block;margin:22px 0;background:#0787f9;color:white;text-align:center;text-decoration:none;border-radius:16px;padding:17px;font-weight:900}
+footer{text-align:center;color:#697386;padding:20px 12px;font-size:13px}.note{font-size:12px;color:#727d8c;margin-top:14px}
+@media(max-width:560px){.topbar{gap:9px;padding:10px}.logo{width:54px;height:54px}.brand h1{font-size:18px}.brand p{font-size:11px}.menu{font-size:23px;padding:7px 12px}nav a{font-size:12px;padding:12px 3px;top:74px}main{padding:12px}.hero{padding:23px 10px}.game{gap:10px;padding:10px}.appicon{width:67px;height:67px;font-size:16px;border-radius:14px}.details h3{font-size:17px}.bonus,.withdraw{font-size:12px}.download{min-width:0;padding:10px 12px;font-size:13px}.tabs{gap:7px}.tab{font-size:14px;padding:12px 5px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="logo">ALL<br>YONO<br>GAMES</div>
+  <div class="brand"><h1>All Yono Games</h1><p>Play • Download • Explore</p></div>
+  <button class="menu" aria-label="Menu" onclick="alert('Menu: Home, About, Contact, Disclaimer')">☰</button>
+</header>
+<nav>
+  <a class="active" href="#home">⌂<br>Home</a>
+  <a href="#about">ⓘ<br>About</a>
+  <a href="#contact">✉<br>Contact</a>
+  <a href="#disclaimer">⚠<br>Disclaimer</a>
+</nav>
+<main id="home">
+  <section class="hero"><h2>ALL YONO<br>GAMES INDIA</h2><p>Download Apps & Explore Games!</p></section>
+  <section class="intro" id="about"><b>All Yono Games India</b> — explore game and app listings in one place. Check the details and terms on each official app page before downloading. This sample site is customizable: replace the demo app names, bonus text, logos and links with verified information.</section>
+  <div class="tabs"><button class="tab selected" onclick="filterGames('new',this)">★ New Games</button><button class="tab" onclick="filterGames('other',this)">🎮 Other Games</button></div>
+  <section class="game-list" id="games">
+    <article class="game" data-group="new"><div class="appicon">YONO<br>BONUS</div><div class="details"><h3>Yono Bonus</h3><p class="bonus">🎁 Bonus details</p><p class="withdraw">▣ Withdrawal terms</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Download</a></article>
+    <article class="game" data-group="new"><span class="badge">1</span><div class="appicon">OK<br>RUMMY</div><div class="details"><h3>OK Rummy</h3><p class="bonus">🎁 Bonus details</p><p class="withdraw">▣ Withdrawal terms</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Download</a></article>
+    <article class="game" data-group="new"><span class="badge">2</span><div class="appicon gold">GOLD<br>RUMMY</div><div class="details"><h3>Gold Rummy</h3><p class="bonus">🎁 Bonus details</p><p class="withdraw">▣ Withdrawal terms</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Download</a></article>
+    <article class="game" data-group="new"><span class="badge">3</span><div class="appicon purple">GAME<br>RUMMY</div><div class="details"><h3>Game Rummy</h3><p class="bonus">🎁 Bonus details</p><p class="withdraw">▣ Withdrawal terms</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Download</a></article>
+    <article class="game" data-group="new"><span class="badge">4</span><div class="appicon blue">INR<br>RUMMY</div><div class="details"><h3>INR Rummy</h3><p class="bonus">🎁 Bonus details</p><p class="withdraw">▣ Withdrawal terms</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Download</a></article>
+    <article class="game" data-group="other" style="display:none"><div class="appicon gold">PUZZLE<br>FUN</div><div class="details"><h3>Puzzle Fun</h3><p class="bonus">🎮 Casual game</p><p class="withdraw">Free-to-play listing</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Visit</a></article>
+    <article class="game" data-group="other" style="display:none"><div class="appicon blue">ARCADE<br>PLAY</div><div class="details"><h3>Arcade Play</h3><p class="bonus">🎮 Arcade games</p><p class="withdraw">Free-to-play listing</p></div><a class="download" href="#" onclick="return demoLink(event)">⬇ Visit</a></article>
+  </section>
+  <a class="telegram" href="https://t.me/" target="_blank" rel="noopener">➤ Join Telegram Channel for Updates</a>
+  <p class="note" id="disclaimer">Disclaimer: Demo template. Verify each app's legitimacy, eligibility, local laws, and actual offer terms. No bonus or earning claims are guaranteed.</p>
+  <p id="contact" class="note">Contact: replace this line with your email or contact details.</p>
+</main>
+<footer>© <span id="year"></span> All Yono Games India · Demo Template</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function filterGames(group,btn){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');document.querySelectorAll('.game').forEach(g=>g.style.display=g.dataset.group===group?'flex':'none')}
+function demoLink(e){e.preventDefault();alert('Demo download button. Edit this HTML and replace href="#" with your real app download URL.');return false}
+</script>
+</body>
+</html>
